@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222;
+    color: #eee;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+header {
+    position: relative;
+    height: 35vh;
+    border-bottom: 7px solid #eee;
+}
+
+main {
+    position: relative;
+    height: 64vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    width: 50%;
+   font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.again {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+}
+
+.number {
+    background-color: #eee;
+    color: #222;
+    width: 10rem;
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    left: 48%;
+    bottom: 0;
+    padding: 2rem 1rem;
+    transform: translate(-50%, 50%);
+}
+
+.btwn {
+    font-size: 1rem;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+.btn {
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1rem 1.7rem;
+    cursor: pointer;
+    border: none;
+    color: #222;
+    background-color: #eee;
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+
+.left input { /* here I could use any class but I used pseudo-selector*/
+    width: 15rem;
+    font-size: 3rem;
+    text-align: center;
+    background: none;
+    color: inherit; /* used inherit because I already used this property in body element*/
+    font-family: inherit; /* same as color property*/
+    padding: 1.5rem;
+    border: 5px solid #eee;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.message {
+    margin-bottom: 8rem;
+    height: 2rem;
+}
+
+.label-score{
+    margin-bottom: 2rem;
+}
